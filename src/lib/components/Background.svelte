@@ -4,7 +4,7 @@
 	import type { Attachment } from "svelte/attachments";
 	import { err, ok, safeTry, type Result } from "neverthrow";
 	import { cn } from "$lib/utils";
-	import { match } from "ts-pattern";
+	import { match, P } from "ts-pattern";
 	import { dev } from "$app/environment";
 
 	let width: number = $state(1920);
@@ -167,13 +167,13 @@
 	class={cn(
 		"fixed top-4 left-4 text-white/50 transition-all",
 		match(status)
-			.with({ type: "rendered" }, () => "opacity-0")
+			.with({ type: "rendered" }, () => "opacity-0 select-none")
 			.with({ type: "failed" }, () => "text-red-500")
 			.otherwise(() => "")
 	)}
 >
 	{match(status)
-		.with({ type: "failed" }, (state) => state.error)
+		.with({ type: "failed", error: P.select() }, (error) => error)
 		.with({ type: "loading", stage: "loading" }, () => "loading shader...")
 		.with({ type: "loading", stage: "compile" }, () => "compiling shader...")
 		.with({ type: "loading", stage: "link" }, () => "linking shader...")
