@@ -15,7 +15,7 @@
 
 <ExpandableListSection name="projects" class="border-l-emerald-500" legendClass={CLASSES}>
 	<Project name="jackssrt.com" language="svelte">this website</Project>
-	<Project name="kantalla.com" language="svelte">bio website for my special someone :3</Project>
+	<Project name="kantalla.com" language="svelte">bio website for one of my friends :3</Project>
 	<Project name="slim-osc" language="rust">
 		incredibly thin program for displaying pc stats in a vrchat message
 	</Project>
