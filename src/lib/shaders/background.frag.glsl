@@ -5,7 +5,6 @@ precision highp float;
 
 uniform float u_time;
 uniform vec2 u_resolution;
-uniform float u_random_seed;
 
 in vec2 v_uv;
 out vec4 fragColor;
@@ -43,7 +42,7 @@ vec2 uv_to_extended_uv(vec2 uv) {
 }
 
 void main() {
-    float t = u_random_seed + u_time;
+    float t = u_time;
     vec2 extended_uv = uv_to_extended_uv(v_uv);
     vec3 col = vec3(0.);
 

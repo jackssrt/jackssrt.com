@@ -9,7 +9,6 @@
 
 	let width: number = $state(1920);
 	let height: number = $state(1080);
-	const randomSeed = ((Date.now() - 1778546946746) / 1000) % (60 * 60 * 24);
 
 	// i miss rust...
 	type Status =
@@ -73,8 +72,7 @@
 			return ok({
 				time: yield* getUniformLocation("u_time"),
 				position: yield* getAttributeLocation("a_position"),
-				resolution: yield* getUniformLocation("u_resolution"),
-				randomSeed: yield* getUniformLocation("u_random_seed")
+				resolution: yield* getUniformLocation("u_resolution")
 			});
 		});
 	}
@@ -140,7 +138,6 @@
 		gl.useProgram(program);
 
 		// uniforms
-		gl.uniform1f(locations.randomSeed, randomSeed);
 		gl.uniform1f(locations.time, performance.now() / 1000);
 		gl.uniform2fv(locations.resolution, [width, height]);
 
