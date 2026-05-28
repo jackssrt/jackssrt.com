@@ -33,7 +33,7 @@
 			>~
 		</p>
 	</div>
-	<div class="grid grid-cols-1 lg:grid-cols-2 gap-1">
+	<div class="grid grid-cols-1 gap-1 lg:grid-cols-2">
 		<Card href="https://discord.com/users/304603833248514048" class="">discord</Card>
 	</div>
 </Card>
