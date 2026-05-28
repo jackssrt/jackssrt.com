@@ -48,7 +48,7 @@
 		<h2 class="text-lg"><b>programming</b></h2>
 		<p>see professional page for more information</p>
 	</div>
-	<Card href="/?return=/bio" class="border-l-white">go to professional page</Card>
+	<Card href="/?return=/bio" class="border-l-white">go there</Card>
 </Card>
 <Card class="relative flex flex-col gap-2 border-l-orange-500">
 	<div class="absolute top-0 right-0 w-6">
