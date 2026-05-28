@@ -35,7 +35,6 @@
 	</div>
 	<div class="grid grid-cols-1 lg:grid-cols-2 gap-1">
 		<Card href="https://discord.com/users/304603833248514048" class="">discord</Card>
-		<Card href="https://kantalla.com/" class="">&lt;3</Card>
 	</div>
 </Card>
 <Card class="relative flex flex-col gap-4 border-l-red-500">
