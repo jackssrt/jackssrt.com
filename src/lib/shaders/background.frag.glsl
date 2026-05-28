@@ -2,6 +2,7 @@
 precision highp float;
 
 #define SKY_500 vec3(14., 165., 233.) / vec3(255.)
+#define FUSCHIA_500 vec3(217., 70., 239.) / vec3(255.);
 
 uniform float u_time;
 uniform vec2 u_resolution;
@@ -50,12 +51,19 @@ void main() {
     float star_noise = smoothstep(.95, 1., noise(extended_uv * 1000. + t * .1));
     col += star_noise;
 
-    // nebula
-    float nebula_noise = noise(extended_uv * 3. - vec2(t * .05, t * .1)) * .25;
-    col += nebula_noise * SKY_500;
-
     // mask
     float dist_from_center = smoothstep(.1, .9, distance(extended_uv, uv_to_extended_uv(vec2(.5))));
     col *= vec3(dist_from_center);
+
+    // nebula 1
+    float nebula_1_noise = noise(extended_uv * 3. - vec2(t * .05, t * .1)) * .125;
+    nebula_1_noise *= min(dist_from_center + .75, 1.);
+    col += nebula_1_noise * SKY_500;
+
+    // nebula 2
+    float nebula_2_noise = noise(extended_uv * 3. - vec2((t + 15.) * .05, (t + 17.) * .1)) * .125;
+    nebula_2_noise *= min(dist_from_center + .75, 1.);
+    col += nebula_2_noise * FUSCHIA_500;
+
     fragColor = vec4(col, 1.0);
 }
