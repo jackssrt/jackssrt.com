@@ -30,7 +30,7 @@ i'm also interested in game development, modding, hardware and reverse engineeri
 	<link rel="canonical" href="https://jackssrt.com" />
 	<meta name="og:url" content="https://jackssrt.com" />
 	<meta name="og:type" content="website" />
-	<meta name="theme-color" content="#0ea5e9" />
+	<meta name="theme-color" content="#000000" />
 	<meta name="mobile-web-app-capable" content="yes" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 </svelte:head>
