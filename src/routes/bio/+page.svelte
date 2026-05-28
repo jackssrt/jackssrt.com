@@ -5,17 +5,8 @@
 	import PaletteIcon from "@iconify-svelte/lucide/palette";
 	import LanguagesIcon from "@iconify-svelte/lucide/languages";
 	import DiscIcon from "@iconify-svelte/lucide/disc";
-	import WarningIcon from "@iconify-svelte/lucide/alert-triangle";
 </script>
 
-<Card href="/?return=/bio" class="grid place-items-center border-l-yellow-500 ">
-	<WarningIcon class="w-8" />
-
-	this is my social bio page <br /><span class="text-sm"
-		>(please stop looking at this if you're looking to hiring me)</span
-	>
-	click to go to the professional page
-</Card>
 <Card class="relative flex flex-col gap-4 border-l-transparent">
 	<div
 		class="absolute top-0 -left-0.5 h-full w-0.5 bg-linear-to-b from-fuchsia-500 to-sky-500"
