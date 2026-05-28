@@ -11,7 +11,10 @@
 {/snippet}
 
 <div class="relative flex flex-col gap-2">
-	<Card class="border-l-sky-500">
+	<Card class="relative border-l-transparent">
+		<div
+			class="absolute top-0 -left-0.5 h-full w-0.5 bg-linear-to-b from-fuchsia-500 to-sky-500"
+		></div>
 		<h1 class="text-2xl">jackssrt</h1>
 		<p>
 			i'm jack, a full-stack developer from <ExternalLink

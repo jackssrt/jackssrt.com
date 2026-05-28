@@ -16,7 +16,10 @@
 	>
 	click to go to the professional page
 </Card>
-<Card class="flex flex-col gap-4 border-l-sky-500">
+<Card class="relative flex flex-col gap-4 border-l-transparent">
+	<div
+		class="absolute top-0 -left-0.5 h-full w-0.5 bg-linear-to-b from-fuchsia-500 to-sky-500"
+	></div>
 	<div class="flex flex-col gap-2">
 		<h1 class="mb-2 text-xl"><b>jack</b>ieee :3</h1>
 		<p>
