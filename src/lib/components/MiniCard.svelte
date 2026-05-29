@@ -4,20 +4,20 @@
 	import type { Snippet } from "svelte";
 
 	const {
-		name,
+		header,
 		href,
 		class: klass = "",
 		children
 	}: {
-		name: string;
+		header: Snippet;
 		href?: string;
 		class?: string;
 		children?: Snippet;
 	} = $props();
 </script>
 
-<Card {href} class={cn("border-l-white hover:[&_>_h3]:font-semibold", klass)}>
-	<h3>{name}</h3>
+<Card {href} class={cn("border-l-white", klass, { "hover:[&_>_h3]:font-semibold": href })}>
+	<h3>{@render header()}</h3>
 	<p class="text-sm">
 		{#if children}
 			{@render children()}

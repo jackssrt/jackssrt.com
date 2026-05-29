@@ -23,7 +23,6 @@
 </script>
 
 <MiniCard
-	{name}
 	{href}
 	class={cn(
 		// i miss rust..
@@ -36,5 +35,9 @@
 
 		klass
 	)}
-	>{#if children}{@render children()}{/if}</MiniCard
+>
+	{#snippet header()}
+		{name}
+	{/snippet}
+	{#if children}{@render children()}{/if}</MiniCard
 >
