@@ -20,5 +20,6 @@
 		incredibly thin program for displaying pc stats in a vrchat message
 	</Project>
 	<Project name="pengui-server" language="rust">rust rewrite of the game server behind yno</Project>
+	<Project name="yno-translate" language="typescript">chat translation userscript for yno</Project>
 	<Project name="josh" language="typescript">old private splatoon discord bot</Project>
 </ExpandableListSection>
