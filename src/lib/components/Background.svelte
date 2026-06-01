@@ -148,13 +148,13 @@
 	}
 </script>
 
-<svelte:body bind:clientWidth={width} bind:clientHeight={height} />
+<svelte:window bind:innerWidth={width} bind:innerHeight={height} />
 <canvas
 	{@attach background}
 	{width}
 	{height}
 	class={cn(
-		"fixed -z-10 h-full w-full bg-black transition duration-1000",
+		"fixed -z-10 h-dvh w-dvw bg-black transition duration-1000",
 		match(status)
 			.with({ type: "rendered" }, () => "")
 			.otherwise(() => "opacity-0")
