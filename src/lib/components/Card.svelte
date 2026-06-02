@@ -8,11 +8,12 @@
 		children,
 		class: klass,
 		href,
+		rel,
 		...rest
-	}: { children?: Snippet; class: string; href?: string } = $props();
+	}: { children?: Snippet; class: string; href?: string; rel?: string } = $props();
 	const ComponentToRender = $derived(
 		href?.startsWith("/") ? InternalLink : ExternalLink
-	) as Component<{ class: string; href: string; children: Snippet }>;
+	) as Component<{ class: string; href: string; rel?: string; children: Snippet }>;
 </script>
 
 {#if href}
@@ -23,6 +24,7 @@
 			klass
 		)}
 		{href}
+		{rel}
 		{...rest}
 	>
 		{#if children}

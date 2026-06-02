@@ -7,14 +7,20 @@
 	const {
 		href,
 		class: klass = "",
+		rel = "",
 		children
-	}: { href: PathnameWithSearchOrHash; class?: string; children?: Snippet } = $props();
+	}: {
+		href: PathnameWithSearchOrHash;
+		rel?: string;
+		class?: string;
+		children?: Snippet;
+	} = $props();
 </script>
 
 <a
 	class={twMerge("transition-all hover:font-semibold", klass)}
 	href={resolve(href)}
-	rel="noopener noreferrer"
+	rel={`noopener noreferrer${rel}`}
 >
 	{#if children}
 		{@render children()}
