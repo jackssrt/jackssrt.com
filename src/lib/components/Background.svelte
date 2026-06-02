@@ -169,11 +169,21 @@
 			.otherwise(() => "")
 	)}
 >
-	{match(status)
-		.with({ type: "failed", error: P.select() }, (error) => error)
-		.with({ type: "loading", stage: "loading" }, () => "loading shader...")
-		.with({ type: "loading", stage: "compile" }, () => "compiling shader...")
-		.with({ type: "loading", stage: "link" }, () => "linking shader...")
-		.with({ type: "rendered" }, () => "shader rendered!")
-		.exhaustive()}
+	<noscript>
+		enable javascript to see the shader
+		<style>
+			.status-message {
+				display: none;
+			}
+		</style>
+	</noscript>
+	<span class="status-message"
+		>{match(status)
+			.with({ type: "failed", error: P.select() }, (error) => error)
+			.with({ type: "loading", stage: "loading" }, () => "loading shader...")
+			.with({ type: "loading", stage: "compile" }, () => "compiling shader...")
+			.with({ type: "loading", stage: "link" }, () => "linking shader...")
+			.with({ type: "rendered" }, () => "shader rendered!")
+			.exhaustive()}
+	</span>
 </div>
