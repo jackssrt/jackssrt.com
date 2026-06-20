@@ -16,10 +16,7 @@
 		| { type: "failed"; error: string }
 		| { type: "rendered" };
 	let status = $state<Status>({ type: "loading", stage: "loading" });
-	if (dev)
-		$effect(() => {
-			console.log(status);
-		});
+	if (dev) $inspect(status).with(console.log);
 	let isAttached = $state(false);
 
 	const background: Attachment<HTMLCanvasElement> = (element) => {
