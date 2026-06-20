@@ -38,6 +38,7 @@
 	"dependencies": {
 		"@fontsource-variable/geist-mono": "^5.2.7",
 		"@iconify-svelte/lucide": "^1.0.38",
+		"@sveltejs/enhanced-img": "^0.11.0",
 		"clsx": "^2.1.1",
 		"neverthrow": "^8.2.0",
 		"runed": "^0.37.1",

@@ -14,7 +14,7 @@
 		children: Snippet;
 		title: string | Snippet;
 		icon?: Snippet;
-		class: string;
+		class?: string;
 		gradientClass?: string;
 		buttons?: Snippet;
 	} = $props();

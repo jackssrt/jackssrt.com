@@ -7,6 +7,7 @@
 	import DiscIcon from "@iconify-svelte/lucide/disc";
 	import avatar from "$lib/assets/bioavatar.png";
 	import BioSection from "./BioSection.svelte";
+
 	const DESCRIPTION =
 		"hai, im jackie~ :3\ni'm an 18 year old bisexual femboy :3c\ni like programming, linguistics, drawing and collecting music! :D";
 </script>
@@ -27,13 +28,15 @@
 	<meta name="og:url" content="https://jackssrt.com/bio" />
 </svelte:head>
 
-<BioSection
-	class="relative flex flex-col gap-4"
-	gradientClass="bg-linear-to-b from-fuchsia-500 to-sky-500"
->
+<BioSection gradientClass="bg-linear-to-b from-fuchsia-500 to-sky-500">
 	{#snippet title()}
 		<h1 class="text-2xl font-bold">jackieee <span class="font-normal">:3</span></h1>
 	{/snippet}
+	<enhanced:img
+		class="absolute top-0 right-0 h-24 w-24 border-r border-white p-1"
+		src="$lib/assets/bioavatar.png"
+		alt="my profile picture"
+	></enhanced:img>
 	<p>
 		hai :D im jack :3 <br />18,
 		<span
