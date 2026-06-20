@@ -14,9 +14,8 @@ i'm also interested in game development, modding, hardware and reverse engineeri
 	<Card {href} class="border-l-white hover:font-semibold">{text}</Card>
 {/snippet}
 
-<svelte:head
-	>
-		<link rel="icon" href={avatar} /><title>jackssrt</title>
+<svelte:head>
+	<link rel="icon" href={avatar} /><title>jackssrt</title>
 	<meta name="og:title" content="jackssrt" />
 	<meta name="description" content={DESCRIPTION} />
 	<meta name="og:description" content={DESCRIPTION} />
@@ -31,10 +30,7 @@ i'm also interested in game development, modding, hardware and reverse engineeri
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 </svelte:head>
 <div class="relative flex flex-col gap-2">
-	<Card class="relative border-l-transparent">
-		<div
-			class="absolute top-0 -left-0.5 h-full w-0.5 bg-linear-to-b from-fuchsia-500 to-sky-500"
-		></div>
+	<Card gradientClass="bg-linear-to-b from-fuchsia-500 to-sky-500">
 		<h1 class="text-2xl">jackssrt</h1>
 		<p>
 			i'm jack, a full-stack developer from <ExternalLink
