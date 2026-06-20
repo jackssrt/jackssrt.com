@@ -4,12 +4,32 @@
 	import ProjectsCard from "./ProjectsCard.svelte";
 	import CertsCard from "./CertsCard.svelte";
 	import ReturnLink from "$lib/components/ReturnLink.svelte";
+	import avatar from "$lib/assets/avatar.png";
+	const DESCRIPTION = `i'm jack, a fullstack developer from the åland islands.
+i specialize in rust and typescript, i work on projects of any scale.
+i'm also interested in game development, modding, hardware and reverse engineering!`;
 </script>
 
 {#snippet link(text: string, href: string)}
 	<Card {href} class="border-l-white hover:font-semibold">{text}</Card>
 {/snippet}
 
+<svelte:head
+	>
+		<link rel="icon" href={avatar} /><title>jackssrt</title>
+	<meta name="og:title" content="jackssrt" />
+	<meta name="description" content={DESCRIPTION} />
+	<meta name="og:description" content={DESCRIPTION} />
+	<meta name="og:image" content={avatar} />
+	<meta name="keywords" content="developer, full-stack, fullstack" />
+	<meta name="author" content="jackssrt" />
+	<link rel="canonical" href="https://jackssrt.com" />
+	<meta name="og:url" content="https://jackssrt.com" />
+	<meta name="og:type" content="website" />
+	<meta name="theme-color" content="#000000" />
+	<meta name="mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+</svelte:head>
 <div class="relative flex flex-col gap-2">
 	<Card class="relative border-l-transparent">
 		<div

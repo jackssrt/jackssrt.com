@@ -5,7 +5,26 @@
 	import PaletteIcon from "@iconify-svelte/lucide/palette";
 	import LanguagesIcon from "@iconify-svelte/lucide/languages";
 	import DiscIcon from "@iconify-svelte/lucide/disc";
+	import avatar from "$lib/assets/bioavatar.png";
+	const DESCRIPTION =
+		"hai, im jackie~ :3\ni'm an 18 year old bisexual femboy :3c\ni like programming, linguistics, drawing and collecting music! :D";
 </script>
+
+<svelte:head>
+	<link rel="icon" href={avatar} />
+	<title>jackssrt</title>
+	<meta name="og:title" content="jackssrt" />
+	<meta name="description" content={DESCRIPTION} />
+	<meta name="og:description" content={DESCRIPTION} />
+	<meta name="og:image" content={avatar} />
+	<meta
+		name="keywords"
+		content="femboy, bisexual, programming, programmer, drawing, linguistics, music"
+	/>
+	<meta name="author" content="jackssrt" />
+	<link rel="canonical" href="https://jackssrt.com/bio" />
+	<meta name="og:url" content="https://jackssrt.com/bio" />
+</svelte:head>
 
 <Card class="relative flex flex-col gap-4 border-l-transparent">
 	<div
