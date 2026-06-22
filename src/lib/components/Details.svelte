@@ -18,8 +18,7 @@
 		<ChevronUp class="hidden w-4 in-open:inline-block" />
 	</summary>
 	<div class={twMerge("mt-2", klass)}>
-		{#if children}
-			{@render children()}
-		{/if}
+			{@render children?.()}
+
 	</div>
 </details>

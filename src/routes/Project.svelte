@@ -39,5 +39,5 @@
 	{#snippet header()}
 		{name}
 	{/snippet}
-	{#if children}{@render children()}{/if}</MiniCard
+	{@render children?.()}</MiniCard
 >

@@ -22,7 +22,6 @@
 	href={resolve(href)}
 	rel={`noopener noreferrer${rel}`}
 >
-	{#if children}
-		{@render children()}
-	{/if}
+		{@render children?.()}
+
 </a>
