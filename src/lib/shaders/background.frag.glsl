@@ -48,7 +48,9 @@ void main() {
     vec3 col = vec3(0.);
 
     // stars
-    float star_noise = smoothstep(.95, 1., noise(extended_uv * 1000. + t * .1));
+    float noise_offset = random(extended_uv); // offset to prevent tiling
+    float star_noise = smoothstep(.95, 1., noise(extended_uv * 1000. + noise_offset + t * .1));
+    star_noise *= sin(t + random(extended_uv) * 100.) * 0.5 + .5; // blinking
     col += star_noise;
 
     // mask
