@@ -39,8 +39,7 @@
 		{#if gradientClass}
 			<div class={clsx("absolute top-0 -left-0.5 h-full w-0.5", gradientClass)}></div>
 		{/if}
-			{@render children?.()}
-
+		{@render children?.()}
 	</ComponentToRender>
 {:else}
 	<div
@@ -54,7 +53,6 @@
 		{#if gradientClass}
 			<div class={clsx("absolute top-0 -left-0.5 h-full w-0.5", gradientClass)}></div>
 		{/if}
-			{@render children?.()}
-
+		{@render children?.()}
 	</div>
 {/if}

@@ -22,8 +22,7 @@
 	<Details {name} class="flex flex-col items-center gap-2">
 		<Legend class={legendClass} />
 		<div class="grid w-full grid-cols-1 gap-1 sm:grid-cols-2">
-				{@render children?.()}
-
+			{@render children?.()}
 		</div>
 	</Details>
 </Card>

@@ -17,6 +17,5 @@
 	{href}
 	rel={`external noopener noreferrer ${rel}`}
 >
-		{@render children?.()}
-
+	{@render children?.()}
 </a>

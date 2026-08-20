@@ -19,7 +19,6 @@
 <Card {href} class={cn("border-l-white", klass, { "hover:[&_>_h3]:font-semibold": href })}>
 	<h3>{@render header()}</h3>
 	<p class="text-sm">
-			{@render children?.()}
-
+		{@render children?.()}
 	</p>
 </Card>
