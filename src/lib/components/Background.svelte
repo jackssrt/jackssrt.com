@@ -1,11 +1,11 @@
 <script lang="ts">
-	import vertexShaderSource from "$lib/shaders/background.vert.glsl?raw";
-	import fragmentShaderSource from "$lib/shaders/background.frag.glsl?raw";
+	import vertexShaderSource from "#lib/shaders/background.vert.glsl?raw";
+	import fragmentShaderSource from "#lib/shaders/background.frag.glsl?raw";
 	import type { Attachment } from "svelte/attachments";
 	import { err, ok, safeTry, type Result } from "neverthrow";
-	import { cn } from "$lib/utils";
+	import { cn } from "#lib/utils.js";
 	import { match, P } from "ts-pattern";
-	import { dev } from "$app/environment";
+	import { dev } from "$app/env";
 
 	let width: number = $state(1920);
 	let height: number = $state(1080);

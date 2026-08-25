@@ -1,7 +1,7 @@
 <script lang="ts">
-	import Card from "$lib/components/Card.svelte";
-	import Details from "$lib/components/Details.svelte";
-	import Legend from "$lib/components/Legend.svelte";
+	import Card from "#lib/components/Card.svelte";
+	import Details from "#lib/components/Details.svelte";
+	import Legend from "#lib/components/Legend.svelte";
 	import type { Snippet } from "svelte";
 	import { twMerge } from "tailwind-merge";
 

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import MiniCard from "$lib/components/MiniCard.svelte";
+	import MiniCard from "#lib/components/MiniCard.svelte";
 	import { match } from "ts-pattern";
 	import type { CertType } from "./CertsCard.svelte";
 

@@ -1,11 +1,11 @@
 <script>
-	import Card from "$lib/components/Card.svelte";
-	import ExternalLink from "$lib/components/ExternalLink.svelte";
+	import Card from "#lib/components/Card.svelte";
+	import ExternalLink from "#lib/components/ExternalLink.svelte";
 	import LaptopIcon from "@iconify-svelte/lucide/laptop";
 	import PaletteIcon from "@iconify-svelte/lucide/palette";
 	import LanguagesIcon from "@iconify-svelte/lucide/languages";
 	import DiscIcon from "@iconify-svelte/lucide/disc";
-	import avatar from "$lib/assets/bioavatar.png";
+	import avatar from "#lib/assets/bioavatar.png";
 	import BioSection from "./BioSection.svelte";
 
 	const DESCRIPTION =
@@ -34,7 +34,7 @@
 	{/snippet}
 	<enhanced:img
 		class="absolute top-0 right-0 h-24 w-24 border-r border-white p-1"
-		src="$lib/assets/bioavatar.png"
+		src="#lib/assets/bioavatar.png"
 		alt="my profile picture"
 	></enhanced:img>
 	<p>

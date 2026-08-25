@@ -1,6 +1,6 @@
 <script lang="ts">
-	import MiniCard from "$lib/components/MiniCard.svelte";
-	import { cn } from "$lib/utils";
+	import MiniCard from "#lib/components/MiniCard.svelte";
+	import { cn } from "#lib/utils.js";
 	import type { Snippet } from "svelte";
 	import type { ProgrammingLanguage } from "./ProjectsCard.svelte";
 	import { match } from "ts-pattern";

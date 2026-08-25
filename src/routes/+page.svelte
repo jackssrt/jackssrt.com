@@ -1,10 +1,10 @@
 <script lang="ts">
-	import Card from "$lib/components/Card.svelte";
-	import ExternalLink from "$lib/components/ExternalLink.svelte";
+	import Card from "#lib/components/Card.svelte";
+	import ExternalLink from "#lib/components/ExternalLink.svelte";
 	import ProjectsCard from "./ProjectsCard.svelte";
 	import CertsCard from "./CertsCard.svelte";
-	import ReturnLink from "$lib/components/ReturnLink.svelte";
-	import avatar from "$lib/assets/avatar.png";
+	import ReturnLink from "#lib/components/ReturnLink.svelte";
+	import avatar from "#lib/assets/avatar.png";
 	const DESCRIPTION = `i'm jack, a fullstack developer from the åland islands.
 i specialize in rust and typescript, i work on projects of any scale.
 i'm also interested in game development, modding, hardware and reverse engineering!`;

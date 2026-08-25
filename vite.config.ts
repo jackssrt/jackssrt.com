@@ -1,9 +1,21 @@
+import adapter from "@sveltejs/adapter-static";
 import tailwindcss from "@tailwindcss/vite";
 import { sveltekit } from "@sveltejs/kit/vite";
 import { defineConfig } from "vite";
 import { enhancedImages } from "@sveltejs/enhanced-img";
 
 export default defineConfig({
-	plugins: [enhancedImages(), tailwindcss(), sveltekit()],
+	plugins: [
+		enhancedImages(),
+		tailwindcss(),
+		sveltekit({
+			compilerOptions: {
+				// Force runes mode for the project, except for libraries. Can be removed in svelte 6.
+				runes: ({ filename }) =>
+					filename.split(/[/\\]/).includes("node_modules") ? undefined : true
+			},
+			adapter: adapter()
+		})
+	],
 	server: { allowedHosts: true }
 });
