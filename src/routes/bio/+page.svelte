@@ -26,6 +26,7 @@
 	<meta name="author" content="jackssrt" />
 	<link rel="canonical" href="https://jackssrt.com/bio" />
 	<meta name="og:url" content="https://jackssrt.com/bio" />
+	<meta name="robots" content="noindex" />
 </svelte:head>
 
 <BioSection gradientClass="bg-linear-to-b from-fuchsia-500 to-sky-500">
