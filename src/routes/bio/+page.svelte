@@ -4,12 +4,12 @@
 	import LaptopIcon from "@iconify-svelte/lucide/laptop";
 	import PaletteIcon from "@iconify-svelte/lucide/palette";
 	import LanguagesIcon from "@iconify-svelte/lucide/languages";
-	import DiscIcon from "@iconify-svelte/lucide/disc";
+	import MusicIcon from "@iconify-svelte/lucide/music";
 	import avatar from "$lib/assets/bioavatar.png";
 	import BioSection from "./BioSection.svelte";
 
 	const DESCRIPTION =
-		"hai, im jackie~ :3\ni'm an 18 year old bisexual femboy :3c\ni like programming, linguistics, drawing and collecting music! :D";
+		"hai, im jackie~ :3\ni'm an 18 year old bisexual femboy :3c\ni like programming, linguistics, drawing and music! :D";
 </script>
 
 <svelte:head>
@@ -85,12 +85,13 @@
 		art page wip c.c
 	</p>
 </BioSection>
-<BioSection class="border-l-emerald-500" title="collecting music">
+<BioSection class="border-l-emerald-500" title="music">
 	{#snippet icon()}
-		<DiscIcon />
+		<MusicIcon />
 	{/snippet}
 	<p>
-		ive been listening to music since i was a kid,<br />and recently ive started archiving the music
-		i listen to<br />i have about 3 200 tracks from 500 albums :D
+		i've been listening to music since i was a kid,<br />i am quite literally always listening to
+		something...<br />and recently i've started archiving the music i listen to<br />i have about 3
+		200 tracks from 500 albums :D
 	</p>
 </BioSection>
