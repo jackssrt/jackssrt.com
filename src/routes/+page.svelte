@@ -28,6 +28,22 @@ i'm also interested in game development, modding, hardware and reverse engineeri
 	<meta name="theme-color" content="#000000" />
 	<meta name="mobile-web-app-capable" content="yes" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<script id="discord:component-embed" type="application/json">
+		{
+			"component": {
+				"type": 17,
+				"accent_color": 5793266,
+				"components": [
+					{
+						"type": 10,
+						"content": `# jackssrt\ni'm jack, a fullstack developer from the åland islands.
+						i specialize in rust and typescript, i work on projects of any scale.
+						i'm also interested in game development, modding, hardware and reverse engineering!`
+					}
+				]
+			}
+		}
+	</script>
 </svelte:head>
 <div class="relative flex flex-col gap-2">
 	<Card gradientClass="bg-linear-to-b from-fuchsia-500 to-sky-500">
