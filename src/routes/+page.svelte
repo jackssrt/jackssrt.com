@@ -1,8 +1,8 @@
 <script lang="ts">
 	import Card from "$lib/components/Card.svelte";
 	import ExternalLink from "$lib/components/ExternalLink.svelte";
-	import ProjectsCard from "./ProjectsCard.svelte";
-	import CertsCard from "./CertsCard.svelte";
+	import ProjectsSection from "./ProjectsSection.svelte";
+	import CertsSection from "./CertsSection.svelte";
 	import avatar from "$lib/assets/avatar.png";
 	const DESCRIPTION = `i'm jack, a fullstack developer from the åland islands.
 i specialize in rust and typescript, i work on projects of any scale.
@@ -43,8 +43,8 @@ i'm also interested in game development, modding, hardware and reverse engineeri
 			development, modding, hardware and reverse engineering!<br />
 		</p>
 	</Card>
-	<ProjectsCard class="border-l-emerald-500" />
-	<CertsCard />
+	<ProjectsSection class="border-l-emerald-500" />
+	<CertsSection />
 	<div class="grid grid-cols-1 gap-1 sm:grid-cols-3">
 		<!-- eslint-disable @typescript-eslint/no-confusing-void-expression -->
 		<!-- bug that hasnt been fixed yet https://github.com/sveltejs/svelte-eslint-parser/issues/657 -->

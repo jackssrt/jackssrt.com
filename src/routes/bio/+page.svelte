@@ -7,7 +7,7 @@
 	import MusicIcon from "@iconify-svelte/lucide/music";
 	import avatar from "$lib/assets/bioavatar.png";
 	import BioSection from "./BioSection.svelte";
-	import ProjectsCard from "../ProjectsCard.svelte";
+	import ProjectsSection from "../ProjectsSection.svelte";
 
 	const DESCRIPTION =
 		"hai, im jackie~ :3\ni'm an 18 year old bisexual femboy :3c\ni like programming, linguistics, drawing and music! :D";
@@ -61,7 +61,7 @@
 	{#snippet icon()}
 		<CodeIcon />
 	{/snippet}
-	<ProjectsCard class="border-l-red-500" />
+	<ProjectsSection class="border-l-red-500" />
 </BioSection>
 <BioSection class="border-l-orange-500" title="linguistics">
 	{#snippet icon()}

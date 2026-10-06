@@ -2,7 +2,7 @@
 	import MiniCard from "$lib/components/MiniCard.svelte";
 	import { cn } from "$lib/utils";
 	import type { Snippet } from "svelte";
-	import type { ProgrammingLanguage } from "./ProjectsCard.svelte";
+	import type { ProgrammingLanguage } from "./ProjectsSection.svelte";
 	import { match } from "ts-pattern";
 
 	const {
