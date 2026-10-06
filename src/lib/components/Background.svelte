@@ -7,8 +7,11 @@
 	import { match, P } from "ts-pattern";
 	import { dev } from "$app/environment";
 
-	let width: number = $state(1920);
-	let height: number = $state(1080);
+	let ratio = $state(1);
+	let rawWidth = $state(1920);
+	const width = $derived(rawWidth * ratio);
+	let rawHeight = $state(1080);
+	const height = $derived(rawHeight * ratio);
 
 	// i miss rust...
 	type Status =
@@ -145,7 +148,11 @@
 	}
 </script>
 
-<svelte:window bind:innerWidth={width} bind:innerHeight={height} />
+<svelte:window
+	bind:innerWidth={rawWidth}
+	bind:innerHeight={rawHeight}
+	bind:devicePixelRatio={ratio}
+/>
 <canvas
 	{@attach background}
 	{width}
