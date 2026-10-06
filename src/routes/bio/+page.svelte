@@ -35,7 +35,7 @@
 		<h1 class="text-2xl font-bold">jackieee <span class="font-normal">:3</span></h1>
 	{/snippet}
 	<enhanced:img
-		class="absolute top-0 right-0 h-24 w-24 border-r border-white p-1"
+		class="absolute top-0 right-0 h-24 w-24 border-r-2 border-white p-1"
 		src="$lib/assets/bioavatar.png"
 		alt="my profile picture"
 	></enhanced:img>
