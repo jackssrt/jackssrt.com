@@ -19,9 +19,9 @@
 	<Project name="jackssrt.com" language="svelte">this website</Project>
 	<Project name="kantalla.com" language="svelte">bio website for one of my friends :3</Project>
 	<Project name="seiko2" language="rust" href="" class="col-span-2">
-		authentication microservice for ynoproject <p class="text-xs text-white/50">
+		authentication microservice for ynoproject <br /><span class="text-xs text-white/50">
 			contributor, not open-source yet
-		</p>
+		</span>
 	</Project>
 	<Project name="slim-osc" language="rust">
 		incredibly thin program for displaying pc stats in a vrchat message
