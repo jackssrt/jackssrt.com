@@ -28,7 +28,7 @@
 	<ComponentToRender
 		class={twMerge(
 			// add 2px of invisible right border to prevent content shifting when hovering
-			"border-l-2 border-r-transparent p-2 transition-all hover:border-r-2 hover:border-l-4",
+			"block border-l-2 border-r-transparent p-2 transition-all hover:border-r-2 hover:border-l-4",
 			gradientClass && "relative border-l-transparent",
 			klass
 		)}
