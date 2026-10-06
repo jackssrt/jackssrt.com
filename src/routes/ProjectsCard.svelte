@@ -11,9 +11,11 @@
 <script lang="ts">
 	import Project from "./Project.svelte";
 	import ExpandableListSection from "./ExpandableListSection.svelte";
+
+	const { class: klass }: { class: string } = $props();
 </script>
 
-<ExpandableListSection name="projects" class="border-l-emerald-500" legendClass={CLASSES}>
+<ExpandableListSection name="projects" class={klass} legendClass={CLASSES}>
 	<Project name="jackssrt.com" language="svelte">this website</Project>
 	<Project name="kantalla.com" language="svelte">bio website for one of my friends :3</Project>
 	<Project name="slim-osc" language="rust">

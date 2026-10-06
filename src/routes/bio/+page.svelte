@@ -1,12 +1,13 @@
 <script>
 	import Card from "$lib/components/Card.svelte";
 	import ExternalLink from "$lib/components/ExternalLink.svelte";
-	import LaptopIcon from "@iconify-svelte/lucide/laptop";
+	import CodeIcon from "@iconify-svelte/lucide/code";
 	import PaletteIcon from "@iconify-svelte/lucide/palette";
 	import LanguagesIcon from "@iconify-svelte/lucide/languages";
 	import MusicIcon from "@iconify-svelte/lucide/music";
 	import avatar from "$lib/assets/bioavatar.png";
 	import BioSection from "./BioSection.svelte";
+	import ProjectsCard from "../ProjectsCard.svelte";
 
 	const DESCRIPTION =
 		"hai, im jackie~ :3\ni'm an 18 year old bisexual femboy :3c\ni like programming, linguistics, drawing and music! :D";
@@ -58,10 +59,10 @@
 </BioSection>
 <BioSection class="border-l-red-500" title="programming">
 	{#snippet icon()}
-		<LaptopIcon />
+		<CodeIcon />
 	{/snippet}
 	<p>see professional page for more information</p>
-	<Card href="/?return=/bio" class="border-l-white">go there</Card>
+	<ProjectsCard class="border-l-red-500" />
 </BioSection>
 <BioSection class="border-l-orange-500" title="linguistics">
 	{#snippet icon()}

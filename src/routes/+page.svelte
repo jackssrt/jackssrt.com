@@ -44,7 +44,7 @@ i'm also interested in game development, modding, hardware and reverse engineeri
 			development, modding, hardware and reverse engineering!<br />
 		</p>
 	</Card>
-	<ProjectsCard />
+	<ProjectsCard class="border-l-emerald-500" />
 	<CertsCard />
 	<div class="grid grid-cols-1 gap-1 sm:grid-cols-3">
 		<!-- eslint-disable @typescript-eslint/no-confusing-void-expression -->
