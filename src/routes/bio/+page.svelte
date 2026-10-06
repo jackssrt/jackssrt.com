@@ -61,7 +61,6 @@
 	{#snippet icon()}
 		<CodeIcon />
 	{/snippet}
-	<p>see professional page for more information</p>
 	<ProjectsCard class="border-l-red-500" />
 </BioSection>
 <BioSection class="border-l-orange-500" title="linguistics">
