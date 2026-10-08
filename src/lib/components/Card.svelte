@@ -3,7 +3,7 @@
 	import { twMerge } from "tailwind-merge";
 	import ExternalLink from "./ExternalLink.svelte";
 	import InternalLink from "./InternalLink.svelte";
-	import clsx from "clsx";
+	import { cn } from "$lib/utils";
 
 	const {
 		children,
@@ -37,7 +37,7 @@
 		{...rest}
 	>
 		{#if gradientClass}
-			<div class={clsx("absolute top-0 -left-0.5 h-full w-0.5", gradientClass)}></div>
+			<div class={cn("absolute top-0 -left-0.5 h-full w-0.5", gradientClass)}></div>
 		{/if}
 		{@render children?.()}
 	</ComponentToRender>
@@ -51,7 +51,7 @@
 		{...rest}
 	>
 		{#if gradientClass}
-			<div class={clsx("absolute top-0 -left-0.5 h-full w-0.5", gradientClass)}></div>
+			<div class={cn("absolute top-0 -left-0.5 h-full w-0.5", gradientClass)}></div>
 		{/if}
 		{@render children?.()}
 	</div>

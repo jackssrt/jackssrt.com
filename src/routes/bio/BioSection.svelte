@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Card from "$lib/components/Card.svelte";
-	import clsx from "clsx";
+	import { cn } from "$lib/utils";
 	import type { Snippet } from "svelte";
 
 	const {
@@ -20,7 +20,7 @@
 	} = $props();
 </script>
 
-<Card class={clsx("relative flex flex-col gap-2", klass)} {gradientClass}>
+<Card class={cn("relative flex flex-col gap-2", klass)} {gradientClass}>
 	{#if icon}
 		<div class="absolute top-0 right-0 w-6">
 			{@render icon()}
