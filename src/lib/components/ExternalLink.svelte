@@ -12,8 +12,6 @@
 
 <a
 	class={twMerge("transition-all hover:font-semibold", klass)}
-	// already marked as external, linter can't catch it
-	// eslint-disable-next-line svelte/no-navigation-without-resolve
 	{href}
 	rel={`external noopener noreferrer ${rel}`}
 >
