@@ -14,6 +14,7 @@ export default defineConfig({
 				runes: ({ filename }) =>
 					filename.split(/[/\\]/).includes("node_modules") ? undefined : true
 			},
+			paths: { base: "", origin: "https://jackssrt.com" },
 			adapter: adapter({ fallback: "404.html" })
 		})
 	],
