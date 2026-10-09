@@ -1,7 +1,7 @@
 <script lang="ts">
 	import "./layout.css";
 	import "@fontsource-variable/google-sans-code";
-	import Background from "$lib/components/Background.svelte";
+	import Background from "#lib/components/Background.svelte";
 	import { prefersReducedMotion } from "svelte/motion";
 	import type { Snippet } from "svelte";
 

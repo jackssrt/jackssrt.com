@@ -3,7 +3,7 @@
 	import { twMerge } from "tailwind-merge";
 	import ExternalLink from "./ExternalLink.svelte";
 	import InternalLink from "./InternalLink.svelte";
-	import { cn } from "$lib/utils";
+	import { cn } from "#lib/utils.js";
 
 	const {
 		children,

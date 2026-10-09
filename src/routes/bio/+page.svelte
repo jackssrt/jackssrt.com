@@ -1,11 +1,11 @@
 <script>
-	import Card from "$lib/components/Card.svelte";
-	import ExternalLink from "$lib/components/ExternalLink.svelte";
+	import Card from "#lib/components/Card.svelte";
+	import ExternalLink from "#lib/components/ExternalLink.svelte";
 	import CodeIcon from "@iconify-svelte/lucide/code";
 	import PaletteIcon from "@iconify-svelte/lucide/palette";
 	import LanguagesIcon from "@iconify-svelte/lucide/languages";
 	import MusicIcon from "@iconify-svelte/lucide/music";
-	import avatar from "$lib/assets/bioavatar.png";
+	import avatar from "#lib/assets/bioavatar.png";
 	import BioSection from "./BioSection.svelte";
 	import ProjectsSection from "../ProjectsSection.svelte";
 
@@ -36,7 +36,7 @@
 	{/snippet}
 	<enhanced:img
 		class="absolute top-0 right-0 h-24 w-24 border-r-2 border-white p-1"
-		src="$lib/assets/bioavatar.png"
+		src="#lib/assets/bioavatar.png"
 		alt="my profile picture"
 	></enhanced:img>
 	<p>

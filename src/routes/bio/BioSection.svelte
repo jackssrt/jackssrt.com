@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Card from "$lib/components/Card.svelte";
-	import { cn } from "$lib/utils";
+	import Card from "#lib/components/Card.svelte";
+	import { cn } from "#lib/utils.js";
 	import type { Snippet } from "svelte";
 
 	const {
