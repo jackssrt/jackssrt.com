@@ -17,7 +17,6 @@
 
 <ExpandableListSection name="projects" class={klass} legendClass={CLASSES}>
 	<Project name="jackssrt.com" language="svelte">this website</Project>
-	<Project name="kantalla.com" language="svelte">bio website for one of my friends :3</Project>
 	<Project name="seiko2" language="rust" href="" class="sm:col-span-2">
 		authentication microservice for ynoproject <br /><span class="text-xs text-white/50">
 			contributor, not open-source yet
